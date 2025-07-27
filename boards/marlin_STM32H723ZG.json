@@ -1,0 +1,32 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m7",
+    "extra_flags": "-DSTM32H723xx -DSTM32H7 -DHAL_STM32",
+    "f_cpu": "550000000L",
+    "mcu": "STM32H723ZGTx",
+    "variant": "STM32H7xx/H723Z(E-G)Tx"
+  },
+  "debug": {
+    "tools": {
+      "stlink": {
+        "default": true,
+        "server": {
+          "executable": "ST-LINK_gdbserver.exe",
+          "arguments": ["-d", "-v", "-t"],
+          "package": "tool-stm32duino"
+        }
+      }
+    }
+  },
+  "frameworks": ["arduino"],
+  "name": "Marlin STM32H723ZG",
+  "platform": "ststm32",
+  "upload": {
+    "maximum_ram_size": 1048576,
+    "maximum_size": 1048576,
+    "protocol": "stlink",
+    "protocols": ["stlink", "dfu"]
+  },
+  "vendor": "MarlinFirmware"
+}
