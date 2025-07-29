@@ -6,7 +6,7 @@
 #include "macros.h"
 
 #define STRING_CONFIG_H_AUTHOR "(crathenkali, FlashForge Creator Pro 2)"
-#define MACHINE_NAME "FlashForge Creator Pro 2"
+#define MACHINE_NAME "OctoFlash Creator MAX"
 
 #define SERIAL_PORT -1
 #define SERIAL_PORT_2 3
